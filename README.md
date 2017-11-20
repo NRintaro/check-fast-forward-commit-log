@@ -19,10 +19,10 @@
 
 ## fast-forwardでない関係で、mergeした場合のコミットログを見る。
 親ブランチ：master
-コミットログ：A => B => C => D
+コミットログ：A => B => C
 
 子ブランチ：non-fast-forward  
-コミットログ：A => B => C => E
+コミットログ：A => B => D
 
 ### Q. 上記の条件で、masterにcheck-non-fast-forwordをmergeすると、コミットログはどうなるか？  
 #### A. コミットログ：A => B => C => D => E => **F**(fast-forwardでない関係のため、自動的に作成されたコミット。)
@@ -30,3 +30,4 @@
 
 コミットごとに追記。
 - コミットB
+- コミットC
